@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante L'Essenza</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="restaurant-type">Ristorante</span>
+            <h1 class="animate-up">Ristorante L'Essenza</h1>
+            <div class="rating-badge animate-up delay-1">
+                <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </span>
+                <span class="rating-score">4,3</span>
+                <span class="review-count">(1.296 recensioni)</span>
+            </div>
+            <div class="highlight-badge animate-up delay-2">
+                <i class="fas fa-award"></i> Segnalato da 159 persone
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Action Bar -->
+    <nav class="action-bar animate-up delay-3">
+        <a href="#indirizzo" class="action-btn">
+            <div class="icon-wrapper"><i class="fas fa-directions"></i></div>
+            <span>Indicazioni</span>
+        </a>
+        <a href="#recensioni" class="action-btn">
+            <div class="icon-wrapper"><i class="far fa-star"></i></div>
+            <span>Recensioni</span>
+        </a>
+        <button class="action-btn">
+            <div class="icon-wrapper"><i class="far fa-bookmark"></i></div>
+            <span>Salva</span>
+        </button>
+        <button class="action-btn">
+            <div class="icon-wrapper"><i class="fas fa-share-nodes"></i></div>
+            <span>Condividi</span>
+        </button>
+        <a href="tel:0233445566" class="action-btn">
+            <div class="icon-wrapper"><i class="fas fa-phone"></i></div>
+            <span>Chiama</span>
+        </a>
+        <a href="#menu" class="action-btn highlight">
+            <div class="icon-wrapper"><i class="fas fa-book-open"></i></div>
+            <span>Menu</span>
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <div class="content-grid">
+            <!-- Left Column: Essential Info -->
+            <section class="info-card fade-in">
+                <h2>Informazioni</h2>
+
+                <div class="info-item" id="indirizzo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-text">
+                        <strong>Indirizzo</strong>
+                        <p>Viale della Rinascita, 15, 20121 Milano MI</p>
+                        <div class="travel-time">
+                            <span class="badge" id="car-time" style="cursor: pointer;"
+                                title="Clicca per calcolare il tempo da te"><i class="fas fa-car"></i> <span
+                                    class="time-text">Calcola</span></span>
+                            <span class="badge" id="walk-time" style="cursor: pointer;"
+                                title="Clicca per calcolare il tempo da te"><i class="fas fa-walking"></i> <span
+                                    class="time-text">Calcola</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="info-text">
+                        <strong>Orari</strong>
+                        <p class="status-closed">Chiuso ora <span class="dot">·</span> <span>Apre mer alle ore 12</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="info-text">
+                        <strong>Telefono</strong>
+                        <p><a href="tel:0233445566">02 3344 5566</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Column: Details & Services -->
+            <div class="details-column">
+                <section class="details-card fade-in delay-1">
+                    <h2>Dettagli Ristorante</h2>
+
+                    <div class="price-range">
+                        <i class="fas fa-wallet"></i>
+                        <div>
+                            <strong>Prezzo a persona</strong>
+                            <p>20-40 €</p>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="services">
+                        <h3>Opzioni del servizio</h3>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check-circle"></i> Sala da pranzo privata</li>
+                            <li><i class="fas fa-check-circle"></i> Seggioloni per bambini</li>
+                            <li><i class="fas fa-utensils"></i> Menu</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="actions-card fade-in delay-2">
+                    <p class="action-prompt">Sei il proprietario di quest'attività?</p>
+                    <div class="action-links">
+                        <a href="#" class="link-btn"><i class="fas fa-pen"></i> Suggerisci una modifica</a>
+                        <a href="#" class="link-btn"><i class="fas fa-plus-circle"></i> Aggiungi informazioni
+                            mancanti</a>
+                        <a href="#" class="link-btn"><i class="fas fa-globe"></i> Aggiungi sito web</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section fade-in delay-3">
+        <div class="section-heading">
+            <span class="restaurant-type">La Nostra Proposta</span>
+            <h2>Esperienza Gastronomica</h2>
+            <p class="section-description">Una selezione curata di piatti che fondono tradizione e creatività,
+                realizzati con materie prime d'eccellenza per offrirvi un viaggio sensoriale indimenticabile attraverso
+                i sapori autentici della nostra terra.</p>
+        </div>
+        <div class="menu-grid">
+            <div class="dish-card">
+                <img src="capesante.png" alt="Capesante Scottate al Burro Nocciola">
+                <h3>Capesante Scottate</h3>
+                <p>Capesante deliscate e scottate al burro nocciola, adagiate su una vellutata di piselli novelli e
+                    guarnite con croccante di guanciale stagionato.</p>
+                <span class="price">28 €</span>
+            </div>
+            <div class="dish-card">
+                <img src="ravioli.png" alt="Ravioli Neri Ripieni di Scampi">
+                <h3>Ravioli Neri agli Scampi</h3>
+                <p>Preziosa pasta fresca al nero di seppia ripiena di scampi bagnati al brandy, adagiata su coulis di
+                    datterini gialli e gocce di stracciatella pugliese.</p>
+                <span class="price">26 €</span>
+            </div>
+            <div class="dish-card">
+                <img src="risotto.png" alt="Risotto allo Zafferano e Ossobuco">
+                <h3>Risotto allo Zafferano e Ossobuco</h3>
+                <p>Risotto Carnaroli mantecato ai pistilli di zafferano, sovrastato da un succulento trancio di ossobuco
+                    brasato a lenta cottura e gremolada tradizionale.</p>
+                <span class="price">30 €</span>
+            </div>
+            <div class="dish-card">
+                <img src="polpo.png" alt="Polpo Rosticciato">
+                <h3>Polpo Rosticciato in Doppia Cottura</h3>
+                <p>Tentacoli cotti a bassa temperatura e arrostiti a fiamma viva, serviti su vellutata di patate viola e
+                    polvere di olive nere disidratate.</p>
+                <span class="price">24 €</span>
+            </div>
+            <div class="dish-card">
+                <img src="filetto_cervo.png" alt="Filetto di Cervo">
+                <h3>Filetto di Cervo ai Frutti di Bosco</h3>
+                <p>Morbido e succulento filetto di cervo delicatamente glassato ai frutti di bosco, accompagnato da una
+                    setosa e ricca purea di castagne aromatizzate.</p>
+                <span class="price">32 €</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ristorante L'Essenza. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
